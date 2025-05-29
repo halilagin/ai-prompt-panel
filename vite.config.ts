@@ -23,5 +23,6 @@ export default defineConfig({
   },
   server: {
     port: 3001,
+    allowedHosts: ['4xzvr5-3001.csb.app']
   }
 }) 
