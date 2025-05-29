@@ -23,6 +23,24 @@ Watch this quick demonstration of the project in action:
   </video>
 </p>
 
+## Live Demo / Sandbox
+
+You can try out a live demo of this project directly in your browser using CodeSandbox:
+
+<a href="https://codesandbox.io/p/github/halilagin/ai-prompt-panel/draft/angry-snow?embed=1" target="_blank">
+  <img src="https://codesandbox.io/static/img/play-codesandbox.svg" alt="Edit on CodeSandbox" />
+</a>
+
+Or, for a direct embed (though GitHub's CSP might sometimes restrict this):
+
+<iframe
+   src="https://codesandbox.io/p/github/halilagin/ai-prompt-panel/draft/angry-snow?embed=1&theme=dark"
+   style="width:100%; height:500px; border:0; border-radius: 4px; overflow:hidden;"
+   title="ai-prompt-panel"
+   allow="accelerometer; ambient-light-sensor; camera; encrypted-media; geolocation; gyroscope; hid; microphone; midi; payment; usb; vr; xr-spatial-tracking"
+   sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts"
+ ></iframe>
+
 ## Installation
 
 ```bash
