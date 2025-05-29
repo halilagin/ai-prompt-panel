@@ -1,0 +1,43 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "allowSyntheticDefaultImports": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noImplicitAny": false,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["example_app_src/*"],
+      "ai-prompt-panel": ["src/ai-prompt-panel/index.ts"],
+      "ai-prompt-panel/*": ["src/ai-prompt-panel/*"]
+    },
+    "strictPropertyInitialization": false,
+    "types": ["node", "vite/client"]
+  },
+  "include": [
+    "example_app_src/**/*.ts",
+    "example_app_src/**/*.tsx",
+    "src/ai-prompt-panel/**/*.ts",
+    "src/ai-prompt-panel/**/*.tsx",
+    "vite.config.lib.ts",
+    "vite.config.example.ts",
+    "vite.config.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "dist_example"
+  ],
+  "references": [{ "path": "./tsconfig.node.json" }]
+}

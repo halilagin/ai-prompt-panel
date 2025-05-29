@@ -1,0 +1,99 @@
+{
+  "name": "ai-prompt-panel",
+  "private": false,
+  "version": "0.1.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/types/index.d.ts"
+    },
+    "./style.css": "./dist/style.css"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "dev": "vite --config vite.config.ts",
+    "build": "npm run build:lib && npm run build:example",
+    "build:lib": "tsc --p tsconfig.lib.json && vite build --config vite.config.lib.ts",
+    "build:example": "tsc --p tsconfig.json && vite build --config vite.config.ts",
+    "preview": "vite preview --config vite.config.ts"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^7.1.0",
+    "@mui/material": "^7.1.0",
+    "@radix-ui/react-popover": "^1.1.14",
+    "@tiptap/extension-blockquote": "^2.12.0",
+    "@tiptap/extension-bullet-list": "^2.12.0",
+    "@tiptap/extension-code-block-lowlight": "^2.12.0",
+    "@tiptap/extension-heading": "^2.12.0",
+    "@tiptap/extension-link": "^2.12.0",
+    "@tiptap/extension-ordered-list": "^2.12.0",
+    "@tiptap/extension-placeholder": "^2.12.0",
+    "@tiptap/react": "^2.12.0",
+    "@tiptap/starter-kit": "^2.12.0",
+    "class-variance-authority": "^0.7.1",
+    "eta": "^3.5.0",
+    "highlight.js": "^11.11.1",
+    "lowlight": "^3.3.0",
+    "lucide-react": "^0.511.0",
+    "react-dropzone": "^14.3.8",
+    "react-icons": "^5.5.0",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^15.6.1",
+    "remark-gfm": "^4.0.1",
+    "sonner": "^2.0.3",
+    "tiptap-markdown": "^0.8.10",
+    "turndown": "^7.2.0",
+    "use-debounce": "^10.0.4",
+    "uuid": "^11.1.0",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@types/lowlight": "^2.0.1",
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.27",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "@types/turndown": "^5.0.5",
+    "@types/uuid": "^10.0.0",
+    "@vitejs/plugin-react": "^3.1.0",
+    "postcss": "^8.5.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.3",
+    "vite": "^4.5.12"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "ai",
+    "prompt",
+    "panel",
+    "tiptap",
+    "editor"
+  ],
+  "author": "Halil Agin <halilagin@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/halilagin/ai-prompt-panel.git"
+  },
+  "homepage": "https://github.com/halilagin/ai-prompt-panel#readme",
+  "bugs": {
+    "url": "https://github.com/halilagin/ai-prompt-panel/issues"
+  }
+}

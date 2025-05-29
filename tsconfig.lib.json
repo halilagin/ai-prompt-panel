@@ -1,0 +1,39 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "declaration": true,
+    "declarationDir": "dist/types",
+    "emitDeclarationOnly": true,
+    "jsx": "react-jsx",
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      // Adjust if your component has internal aliases different from the root tsconfig
+    }
+  },
+  "include": [
+    "src/ai-prompt-panel/**/*.ts",
+    "src/ai-prompt-panel/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "example_app_src",
+    "public",
+    "prompts",
+    "**/*.test.ts",
+    "**/*.test.tsx",
+    "**/*.spec.ts",
+    "**/*.spec.tsx",
+    "vite.config.ts",
+    "vite.config.lib.ts",
+    "vite.config.example.ts",
+    "jest.config.ts",
+    "jest.setup.js",
+    "tsconfig.jest.json",
+    "tsconfig.node.json",
+    "Makefile",
+    "index.html"
+  ]
+} 
