@@ -22,7 +22,6 @@ export default defineConfig({
     sourcemap: true,
   },
   server: {
-    port: 3001,
-    allowedHosts: ['.csb.app']
+    allowedHosts: true
   }
 }) 
